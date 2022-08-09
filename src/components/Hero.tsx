@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, Button, Box, Hidden } from "@mui/material";
+import { Grid, Typography, Button, Box } from "@mui/material";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
