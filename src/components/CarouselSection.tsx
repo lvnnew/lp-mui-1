@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import TranslateOutlinedIcon from "@mui/icons-material/TranslateOutlined";
 import ToysOutlinedIcon from "@mui/icons-material/ToysOutlined";
 import MusicNoteOutlinedIcon from "@mui/icons-material/MusicNoteOutlined";
