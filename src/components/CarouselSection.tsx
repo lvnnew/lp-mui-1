@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import TranslateOutlinedIcon from "@mui/icons-material/TranslateOutlined";
 import ToysOutlinedIcon from "@mui/icons-material/ToysOutlined";
 import MusicNoteOutlinedIcon from "@mui/icons-material/MusicNoteOutlined";
@@ -13,7 +13,6 @@ import InsertEmoticonOutlinedIcon from "@mui/icons-material/InsertEmoticonOutlin
 import SportsSoccerOutlinedIcon from "@mui/icons-material/SportsSoccerOutlined";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import { Container } from "@mui/system";
 
 const CarouselSection = () => {
   return (
@@ -34,13 +33,18 @@ const CarouselSection = () => {
         <span style={{ color: "#205edc", fontWeight: "700" }}>Идеально</span>{" "}
         для
       </Typography>
-      <p style={{textAlign: 'center', color: 'red'}}> Анимация карусели еще не реализованна ;(</p>
-      <Container
+      <p style={{ textAlign: "center", color: "red" }}>
+        {" "}
+        Анимация карусели еще не реализованна ;(
+      </p>
+      <Grid
+        xs={6}
+        md={8}
         sx={{
           display: "flex",
           justifyContent: "space-around",
           flexWrap: "wrap",
-          paddingBottom: '150px',
+          paddingBottom: "150px",
         }}
       >
         <Card
@@ -50,7 +54,7 @@ const CarouselSection = () => {
             maxWidth: 163,
             border: ".1px solid",
             borderRadius: "10px",
-            margin: "8px !important",
+            margin: "8px",
           }}
         >
           <CardContent sx={{ textAlign: "center" }}>
@@ -291,7 +295,7 @@ const CarouselSection = () => {
             </Typography>
           </CardContent>
         </Card>
-      </Container>
+      </Grid>
     </>
   );
 };
