@@ -1,10 +1,12 @@
-import React from 'react';
-import Hero from './components/Hero';
+import React from "react";
+import CarouselSection from "./components/CarouselSection";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <div className="App">
       <Hero />
+      <CarouselSection />
     </div>
   );
 }

@@ -8,6 +8,8 @@
     "@fontsource/montserrat": "^4.5.12",
     "@fontsource/questrial": "^4.5.9",
     "@fontsource/roboto": "^4.5.8",
+    "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -19,7 +21,13 @@
     "netlify-cli": "^10.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-multi-carousel": "^2.8.2",
+    "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
@@ -48,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-slick": "^0.23.10"
   }
 }

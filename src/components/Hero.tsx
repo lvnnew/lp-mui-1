@@ -10,6 +10,7 @@ const Hero = () => {
     <Box
       sx={{
         width: "100%",
+        height: '100vh',
         display: "flex",
         minHeight: "500px",
       }}
@@ -18,7 +19,6 @@ const Hero = () => {
         container
         alignItems='center'
         justifyContent='center'
-        marginTop={10}
         sx={{
           maxWidth: "1300px",
           padding: "60px",
