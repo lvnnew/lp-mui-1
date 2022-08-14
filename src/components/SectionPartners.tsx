@@ -15,8 +15,9 @@ const SectionPartners = () => {
     <Box
       sx={{
         minHeight: "500px",
-        maxWidth: "100%",
-        paddingTop: '50px'
+        maxWidth: "100vw",
+        paddingTop: "50px",
+        overflow: 'hidden'
       }}
     >
       <Typography
@@ -30,12 +31,13 @@ const SectionPartners = () => {
           paddingTop: "35px",
           paddingBottom: "25px",
           color: "#231F20",
+          overflowWrap: 'break-word'
         }}
       >
         <span style={{ color: "#205edc", fontWeight: "700" }}>
-          Идеально&nbsp;
+          Быстрая и простая&nbsp;
         </span>
-        для
+        интеграция
       </Typography>
       <Grid
         sx={{
@@ -52,13 +54,13 @@ const SectionPartners = () => {
                 <img
                   src={Binotel}
                   alt="логотип"
-                  style={{ marginRight: "80px", cursor: "pointer"}}
+                  style={{ marginRight: "80px", cursor: "pointer" }}
                 />
 
                 <img
                   src={СМС}
                   alt="логотип"
-                  style={{ marginRight: "80px", cursor: "pointer"}}
+                  style={{ marginRight: "80px", cursor: "pointer" }}
                 />
 
                 <img
