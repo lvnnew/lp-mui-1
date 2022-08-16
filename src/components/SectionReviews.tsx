@@ -1,4 +1,4 @@
-import { Typography, Box, Container, Grid, Card } from "@mui/material";
+import { Typography, Box, Container, Grid, } from "@mui/material";
 import f1 from "../images/reviews/f1.jpg";
 import f2 from "../images/reviews/f2.jpg";
 import f3 from "../images/reviews/f3.jpg";
