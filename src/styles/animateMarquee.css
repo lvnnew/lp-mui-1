@@ -25,6 +25,7 @@
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: .4;
+  transition: all .3s;
 }
 
 .marquee div img:hover {
@@ -34,7 +35,7 @@
   -o-filter: grayscale(0%);
   filter: grayscale(0%);
   opacity: 1;
-  transition: all ease-in-out .3s ;
+  transition: all .3s;
 }
 
 @-moz-keyframes scroll-left {
