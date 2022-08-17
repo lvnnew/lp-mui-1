@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import Binotel from "../images/partners/Binotel.png";
 import СМС from "../images/partners/СМС-Визитка.png";
@@ -8,15 +8,67 @@ import Pbx from "../images/partners/Pbx.png";
 import rostelecom from "../images/partners/rostelecom.png";
 import Wazzup from "../images/partners/Wazzup.png";
 import Zadarma from "../images/partners/Zadarma.png";
-import "../styles/animateMarquee.css";
-import { Container } from "@mui/system";
+import "../styles/SectionPartners.css";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const SectionPartners = () => {
+  let settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    speed: 4000,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    adaptiveHeight: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        dots: false,
+        arrows: false,
+        infinite: false,
+        speed: 500,
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <Container>
+    <Container
+      sx={{
+        minHeight: "500px",
+      }}
+    >
       <Box
         sx={{
-          minHeight: "500px",
+          minHeight: "100px",
           maxWidth: "100vw",
           paddingTop: "50px",
         }}
@@ -35,74 +87,297 @@ const SectionPartners = () => {
             overflowWrap: "break-word",
           }}
         >
-          <span style={{ color: "#205edc", fontWeight: "700" }}>
-            Быстрая и простая&nbsp;
+          <span style={{ color: "#205edc", fontWeight: "700",}}>
+            Быстрая и простая
+            <br/>
           </span>
           интеграция
         </Typography>
-        <Grid
-          sx={{
-            minHeight: "500px",
-            paddingTop: "20px",
-          }}
-        >
-          <Grid>
-            <Box>
-              <Box className="marquee">
-                <div>
+      </Box>
+      <Container sx={{ margin: "20px" }}>
+        <Slider {...settings}>
+          <div>
+            <Box
+              sx={{
+                paddingTop: "40px",
+                margin: "30px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: "#fff",
+                border: "none",
+                borderRadius: "5px",
+                height: "100%",
+              }}
+            >
+              <Box>
+                <div
+                  style={{
+                    display: "flex",
+                  }}
+                >
                   <img
+                    className="grayFilter"
                     src={Binotel}
-                    alt="логотип"
-                    style={{ marginRight: "80px", cursor: "pointer" }}
-                  />
-
-                  <img
-                    src={СМС}
-                    alt="логотип"
-                    style={{ marginRight: "80px", cursor: "pointer" }}
-                  />
-
-                  <img
-                    src={Mango}
-                    alt="логотип"
-                    style={{ marginRight: "80px", cursor: "pointer" }}
-                  />
-
-                  <img
-                    src={myCool}
-                    alt="логотип"
-                    style={{ marginRight: "80px", cursor: "pointer" }}
-                  />
-
-                  <img
-                    src={Pbx}
-                    alt="логотип"
-                    style={{ marginRight: "80px", cursor: "pointer" }}
-                  />
-
-                  <img
-                    src={rostelecom}
-                    alt="логотип"
-                    style={{ marginRight: "80px", cursor: "pointer" }}
-                  />
-
-                  <img
-                    src={Wazzup}
-                    alt="логотип"
-                    style={{ marginRight: "80px", cursor: "pointer" }}
-                  />
-
-                  <img
-                    src={Zadarma}
-                    alt="логотип"
-                    style={{ cursor: "pointer" }}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    alt="картинка"
                   />
                 </div>
               </Box>
             </Box>
-          </Grid>
-        </Grid>
-      </Box>
+          </div>
+          <div>
+            <Box
+              sx={{
+                paddingTop: "40px",
+                margin: "30px",
+                display: "flex",
+                background: "#fff",
+                border: "none",
+                borderRadius: "5px",
+                height: "100%",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Box>
+                <div
+                  style={{
+                    display: "flex",
+                  }}
+                >
+                  <img
+                    className="grayFilter"
+                    src={СМС}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    alt="картинка"
+                  />
+                </div>
+              </Box>
+            </Box>
+          </div>
+          <div>
+            <Box
+              sx={{
+                paddingTop: "40px",
+                margin: "30px",
+                display: "flex",
+                background: "#fff",
+                border: "none",
+                borderRadius: "5px",
+                height: "100%",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Box>
+                <div
+                  style={{
+                    display: "flex",
+                  }}
+                >
+                  <img
+                    className="grayFilter"
+                    src={Mango}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    alt="картинка"
+                  />
+                </div>
+              </Box>
+            </Box>
+          </div>
+          <div>
+            <Box
+              sx={{
+                paddingTop: "40px",
+                margin: "30px",
+                display: "flex",
+                background: "#fff",
+                border: "none",
+                borderRadius: "5px",
+                height: "100%",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Box>
+                <div
+                  style={{
+                    display: "flex",
+                  }}
+                >
+                  <img
+                    className="grayFilter"
+                    src={myCool}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    alt="картинка"
+                  />
+                </div>
+              </Box>
+            </Box>
+          </div>
+          <div>
+            <Box
+              sx={{
+                paddingTop: "40px",
+                margin: "30px",
+                display: "flex",
+                background: "#fff",
+                border: "none",
+                borderRadius: "5px",
+                height: "100%",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Box>
+                <div
+                  style={{
+                    display: "flex",
+                  }}
+                >
+                  <img
+                    className="grayFilter"
+                    src={Pbx}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    alt="картинка"
+                  />
+                </div>
+              </Box>
+            </Box>
+          </div>
+          <div>
+            <Box
+              sx={{
+                paddingTop: "40px",
+                margin: "30px",
+                display: "flex",
+                background: "#fff",
+                border: "none",
+                borderRadius: "5px",
+                height: "100%",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Box>
+                <div
+                  style={{
+                    display: "flex",
+                  }}
+                >
+                  <img
+                    className="grayFilter"
+                    src={rostelecom}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    alt="картинка"
+                  />
+                </div>
+              </Box>
+            </Box>
+          </div>
+          <div>
+            <Box
+              sx={{
+                paddingTop: "40px",
+                margin: "30px",
+                display: "flex",
+                background: "#fff",
+                border: "none",
+                borderRadius: "5px",
+                height: "100%",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Box>
+                <div
+                  style={{
+                    display: "flex",
+                  }}
+                >
+                  <img
+                    className="grayFilter"
+                    src={Wazzup}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    alt="картинка"
+                  />
+                </div>
+              </Box>
+            </Box>
+          </div>
+          <div>
+            <Box
+              sx={{
+                paddingTop: "40px",
+                margin: "30px",
+                display: "flex",
+                background: "#fff",
+                border: "none",
+                borderRadius: "5px",
+                height: "100%",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Box>
+                <div
+                  style={{
+                    display: "flex",
+                  }}
+                >
+                  <img
+                    className="grayFilter"
+                    src={Zadarma}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    alt="картинка"
+                  />
+                </div>
+              </Box>
+            </Box>
+          </div>
+        </Slider>
+      </Container>
     </Container>
   );
 };

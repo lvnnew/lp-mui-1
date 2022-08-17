@@ -75,14 +75,22 @@ const Section14DaysFree = () => {
             <Button
               variant="contained"
               sx={{
-                minWidth: "240px !important",
-                fontSize: "18px",
-                fontWeight: "700",
-                background: "#205edc",
+                margin: '20px 0',
+                fontFamily: "Montserrat, sans-serif",
+                backgroundColor: "#205edc",
+                color: "#fff",
+                padding: ".6em 2.8em",
+                border: 0,
+                borderRadius: "0.5em",
+                fontSize: "1.3em",
+                fontWeight: 600,
+                textAlign: "center",
+                boxShadow: "0 10px 25px rgb(39 136 251 / 60%)",
                 textTransform: "none",
-                borderRadius: "10px",
-                padding: "14px",
-                marginTop: "50px",
+                "&:hover": {
+                  bgcolor: "#2050d4",
+                  boxShadow: "0 10px 25px rgb(39 136 251 / 60%)",
+                },
               }}
             >
               Начать бесплатно

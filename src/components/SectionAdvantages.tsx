@@ -5,6 +5,7 @@ import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import FlashOnOutlinedIcon from "@mui/icons-material/FlashOnOutlined";
 import DataUsageOutlinedIcon from "@mui/icons-material/DataUsageOutlined";
 import SignalCellularAltOutlinedIcon from "@mui/icons-material/SignalCellularAltOutlined";
+import { Container } from "@mui/system";
 
 const SectionAdvantages = () => {
   const sectionItems = [
@@ -70,10 +71,10 @@ const SectionAdvantages = () => {
     },
   ];
   return (
-    <Box
+    <Container
       sx={{
-        maxWidth: "1130px",
-        margin: "0px auto",
+        maxWidth: "100%",
+        minHeight: '100%',
       }}
     >
       <Typography
@@ -113,22 +114,19 @@ const SectionAdvantages = () => {
               justifyContent: "center",
               maxHeight: "128px",
               maxWidth: "336px",
-              minHeight: "128px",
-              minWidth: "336px",
-              margin: "50px,",
+              margin: "80px,",
             }}
           >
             <Grid
               item
-              spacing={2}
               xs={12}
               md={12}
               key={item.id}
               sx={{
                 textAlign: "left",
-                margin: "0px 25px",
               }}
             >
+              <Container>
               <Typography
                 sx={{
                   backgroundColor: "#e5edfb",
@@ -155,12 +153,13 @@ const SectionAdvantages = () => {
               >
                 {item.title}
               </Typography>
-              <Typography>{item.sentence}</Typography>
+              <Typography >{item.sentence}</Typography>
+              </Container>
             </Grid>
           </Box>
         ))}
       </Grid>
-    </Box>
+    </Container>
   );
 };
 

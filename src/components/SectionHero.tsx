@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        width: "100%",
+        maxWidth: "100%",
         height: '100vh',
         display: "flex",
         minHeight: "500px",
@@ -17,11 +17,13 @@ const Hero = () => {
     >
       <Grid
         container
+        display='flex'
         alignItems='center'
         justifyContent='center'
         sx={{
-          maxWidth: "1300px",
+          maxWidth: "100%",
           padding: "60px",
+
         }}
       >
         <Grid container xs={12} md={8} alignItems='center' justifyContent='center'>
@@ -71,24 +73,24 @@ const Hero = () => {
                 bgcolor: "#205edc",
                 width: "250px",
                 padding: "16px",
-                textTransform: "none",
                 borderRadius: '10px',
                 fontWeight: "600",
+                boxShadow: "0 10px 25px rgb(39 136 251 / 60%)",
+                textTransform: "none",
                 "&:hover": {
                   bgcolor: "#2050d4",
-                }
+                  boxShadow: "0 10px 25px rgb(39 136 251 / 60%)",
+                },
               }}
             >
               Начать бесплатно
             </Button>
             <Button
               variant="text"
-              color="primary"
               sx={{
                 fontFamily: "Montserrat, sans-serif",
                 fontSize: "16px",
-                width: "250px",
-                padding: "16px",
+                padding: "20px",
                 textTransform: "none",
                 fontWeight: "400",
                 "&:hover": {

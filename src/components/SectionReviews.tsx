@@ -39,18 +39,23 @@ const SectionReviews = () => {
     infinite: false,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
-    adaptiveHeight: true,
     swipeToSlide: true,
+    adaptiveHeight: false,
     responsive: [
       {
+        
+    dots: false,
+    arrows: false,
+    infinite: false,
+    speed: 500,
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false,
         },
       },
       {
@@ -72,7 +77,9 @@ const SectionReviews = () => {
   };
 
   return (
-    <>
+    <Container sx={{
+      minHeight: '100%',
+    }}>
       <Container>
         <Box
           sx={{
@@ -184,7 +191,7 @@ const SectionReviews = () => {
         </Box>
       </Container>
 
-      <Container sx={{ padding: "20px" }}>
+      <Container sx={{ margin: "20px" }}>
         <Slider {...settings}>
           <div>
             <Box
@@ -195,6 +202,7 @@ const SectionReviews = () => {
                 background: "#fff",
                 border: "none",
                 borderRadius: "5px",
+                height: '100%',
                 boxShadow: "0px 0px 3px -1px #000000",
                 transition: "all .3s",
                 ":hover": {
@@ -724,7 +732,7 @@ const SectionReviews = () => {
           </div>
         </Slider>
       </Container>
-    </>
+    </Container>
   );
 };
 
