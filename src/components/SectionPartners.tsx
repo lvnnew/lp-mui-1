@@ -32,14 +32,15 @@ const SectionPartners = () => {
       {
         dots: false,
         arrows: false,
-        infinite: false,
-        speed: 500,
+        infinite: true,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 1000,
+        cssEase: "linear",
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: false,
-          dots: false,
         },
       },
       {
@@ -47,7 +48,6 @@ const SectionPartners = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 1,
         },
       },
       {
@@ -87,14 +87,14 @@ const SectionPartners = () => {
             overflowWrap: "break-word",
           }}
         >
-          <span style={{ color: "#205edc", fontWeight: "700",}}>
+          <span style={{ color: "#205edc", fontWeight: "700" }}>
             Быстрая и простая
-            <br/>
+            <br />
           </span>
           интеграция
         </Typography>
       </Box>
-      <Container sx={{ margin: "20px" }}>
+      <Box sx={{ margin: "20px" }}>
         <Slider {...settings}>
           <div>
             <Box
@@ -377,7 +377,7 @@ const SectionPartners = () => {
             </Box>
           </div>
         </Slider>
-      </Container>
+      </Box>
     </Container>
   );
 };

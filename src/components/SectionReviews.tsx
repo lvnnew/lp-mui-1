@@ -191,13 +191,13 @@ const SectionReviews = () => {
         </Box>
       </Container>
 
-      <Container sx={{ margin: "20px" }}>
+      <Box sx={{ margin: "20px", }}>
         <Slider {...settings}>
           <div>
             <Box
               sx={{
-                padding: "40px",
-                margin: "30px",
+                padding: "30px",
+                margin: "10px",
                 display: "flex",
                 background: "#fff",
                 border: "none",
@@ -264,8 +264,8 @@ const SectionReviews = () => {
           <div>
             <Box
               sx={{
-                padding: "40px",
-                margin: "30px",
+                padding: "30px",
+                margin: "10px",
                 display: "flex",
                 background: "#fff",
                 border: "none",
@@ -278,7 +278,9 @@ const SectionReviews = () => {
                 },
               }}
             >
-              <Box>
+              <Box sx={{
+               maxWidth: '100%',
+              }}>
                 <div style={{ display: "flex" }}>
                   <img
                     src={f2}
@@ -300,6 +302,7 @@ const SectionReviews = () => {
                         fontSize: "14px",
                         opacity: "0.4",
                         fontWeight: "500",
+                        wordBreak: "break-word",
                       }}
                     >
                       Курсы программирования <br /> Москва
@@ -331,8 +334,8 @@ const SectionReviews = () => {
           <div>
             <Box
               sx={{
-                padding: "40px",
-                margin: "30px",
+                padding: "30px",
+                margin: "10px",
                 display: "flex",
                 background: "#fff",
                 border: "none",
@@ -399,8 +402,8 @@ const SectionReviews = () => {
           <div>
             <Box
               sx={{
-                padding: "40px",
-                margin: "30px",
+                padding: "30px",
+                margin: "10px",
                 display: "flex",
                 background: "#fff",
                 border: "none",
@@ -466,8 +469,8 @@ const SectionReviews = () => {
           <div>
             <Box
               sx={{
-                padding: "40px",
-                margin: "30px",
+                padding: "30px",
+                margin: "10px",
                 display: "flex",
                 background: "#fff",
                 border: "none",
@@ -533,8 +536,8 @@ const SectionReviews = () => {
           <div>
             <Box
               sx={{
-                padding: "40px",
-                margin: "30px",
+                padding: "30px",
+                margin: "10px",
                 display: "flex",
                 background: "#fff",
                 border: "none",
@@ -600,8 +603,8 @@ const SectionReviews = () => {
           <div>
             <Box
               sx={{
-                padding: "40px",
-                margin: "30px",
+                padding: "30px",
+                margin: "10px",
                 display: "flex",
                 background: "#fff",
                 border: "none",
@@ -667,8 +670,8 @@ const SectionReviews = () => {
           <div>
             <Box
               sx={{
-                padding: "40px",
-                margin: "30px",
+                padding: "30px",
+                margin: "10px",
                 display: "flex",
                 background: "#fff",
                 border: "none",
@@ -731,7 +734,7 @@ const SectionReviews = () => {
             </Box>
           </div>
         </Slider>
-      </Container>
+      </Box>
     </Container>
   );
 };

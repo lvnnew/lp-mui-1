@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, Box, } from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
 import RocketOutlinedIcon from "@mui/icons-material/RocketOutlined";
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import FlashOnOutlinedIcon from "@mui/icons-material/FlashOnOutlined";
@@ -71,12 +71,7 @@ const SectionAdvantages = () => {
     },
   ];
   return (
-    <Container
-      sx={{
-        maxWidth: "100%",
-        minHeight: '100%',
-      }}
-    >
+    <Container>
       <Typography
         variant="h3"
         fontFamily="Montserrat, sans-serif"
@@ -96,12 +91,12 @@ const SectionAdvantages = () => {
         </span>{" "}
       </Typography>
       <Grid
-        container
+        container 
         sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          margin: "auto 35px",
+          margin: "20px auto",
           paddingBottom: "100px",
           minHeight: "500px",
         }}
@@ -112,12 +107,12 @@ const SectionAdvantages = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              maxHeight: "128px",
-              maxWidth: "336px",
-              margin: "80px,",
+              maxWidth: "350px",
+              margin: "8px",
+              paddingLeft: '30px',
             }}
           >
-            <Grid
+            <Grid container 
               item
               xs={12}
               md={12}
@@ -127,33 +122,37 @@ const SectionAdvantages = () => {
               }}
             >
               <Container>
-              <Typography
-                sx={{
-                  backgroundColor: "#e5edfb",
-                  width: "36px",
-                  height: "36px",
-                  borderRadius: "10px",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  position: "relative",
-                  top: "40px",
-                  left: "-50px",
-                }}
-              >
-                {item.icon}
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: 20,
-                  color: "#205edc",
-                  fontWeight: 700,
-                  padding: "8px 0px",
-                }}
-              >
-                {item.title}
-              </Typography>
-              <Typography >{item.sentence}</Typography>
+                <Box>
+                  <Typography
+                    sx={{
+                      backgroundColor: "#e5edfb",
+                      width: "36px",
+                      height: "36px",
+                      borderRadius: "10px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      position: "relative",
+                      top: "40px",
+                      left: "-50px",
+                    }}
+                  >
+                    {item.icon}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: 20,
+                      color: "#205edc",
+                      fontWeight: 700,
+                      padding: "8px 0px",
+                    }}
+                  >
+                    {item.title}
+                  </Typography>
+                  <Typography>
+                    {item.sentence}
+                  </Typography>
+                </Box>
               </Container>
             </Grid>
           </Box>
